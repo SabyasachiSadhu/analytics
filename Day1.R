@@ -82,4 +82,19 @@ prop.table(table(grade))
 sapply(list(rollno,name,age,marks,gender,grade),length)
 (students=data.frame(rollno,name,age,marks,gender,grade))
 write.csv(students, 'data/students.csv')
-write.csv(students, 'data/students.csv')
+write.csv(students, 'data/students.csv', row.names=F)
+df1=read.csv( 'data/students.csv')
+df1
+df2=read.csv('https://raw.githubusercontent.com/SabyasachiSadhu/analytics/master/data/students.csv')
+df2
+df3=read.csv(file.choose())
+df3
+
+stud
+library(dplyr)
+
+class(students)
+summary(students)
+students %>% group_by(gender,grade) %>% summarise(mean(age))
+students %>% group_by(gender) %>% tally()
+mtcars %>% group_by(carb) %>% tally()
