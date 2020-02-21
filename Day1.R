@@ -98,3 +98,7 @@ summary(students)
 students %>% group_by(gender,grade) %>% summarise(mean(age))
 students %>% group_by(gender) %>% tally()
 mtcars %>% group_by(carb) %>% tally()
+
+
+#day2:
+mtcars
